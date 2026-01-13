@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stock Prediction</title>
+
+<style>
+/* ---------- Page Base ---------- */
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#e0f2fe,#f8fafc);
+}
+
+/* ---------- Navbar ---------- */
+.navbar{
+    background:#0f172a;
+    padding:14px;
+    text-align:center;
+}
+.navbar a{
+    color:#e5e7eb;
+    margin:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.navbar a:hover{
+    color:#38bdf8;
+}
+
+/* ---------- Prediction Card ---------- */
+.container{
+    width:420px;
+    margin:80px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    text-align:center;
+    transition:0.3s;
+}
+.container:hover{
+    transform:translateY(-8px);
+}
+
+/* ---------- Inputs ---------- */
+input{
+    width:90%;
+    padding:12px;
+    margin:12px 0;
+    border-radius:6px;
+    border:1px solid #cbd5f5;
+    font-size:15px;
+}
+input:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,0.5);
+}
+
+/* ---------- Button ---------- */
+button{
+    width:95%;
+    padding:12px;
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background:#2563eb;
+    transform:scale(1.05);
+}
+
+/* ---------- AI Info Box ---------- */
+.ai-box{
+    margin-top:25px;
+    padding:15px;
+    background:#f1f5f9;
+    border-radius:8px;
+    font-size:14px;
+    color:#334155;
+    transition:0.3s;
+}
+.ai-box:hover{
+    background:#1e3a8a;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+
+<!-- ---------- NAVBAR ---------- -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/predict-page">Prediction</a>
+    <a href="/about">About</a>
+    <a href="/work">How It Works</a>
+    <a href="/dataset">Dataset</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+</div>
+
+<!-- ---------- PREDICTION FORM ---------- -->
+<div class="container">
+    <h2>📈 Stock Price Prediction</h2>
+    <p>Enter stock details to get AI-based prediction</p>
+
+    <form action="/predict" method="post">
+        <input type="text" name="stock" placeholder="Stock Symbol (e.g. AAPL)" required>
+        <input type="number" name="days" placeholder="Days Ahead (e.g. 7)" required>
+        <button>Predict Price</button>
+    </form>
+
+    <!-- ---------- AI INFO ---------- -->
+    <div class="ai-box">
+        🤖 AI-Powered Stock Market Predictor is here to predict.
+    </div>
+</div>
+
+</body>
+</html>
+

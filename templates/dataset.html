@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dataset</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#e0f2fe,#f8fafc);
+}
+
+/* ---------- Navbar ---------- */
+.navbar{
+    background:#0f172a;
+    padding:14px;
+    text-align:center;
+}
+.navbar a{
+    color:#e5e7eb;
+    margin:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.navbar a:hover{
+    color:#38bdf8;
+}
+
+/* ---------- Main Container ---------- */
+.container{
+    width:800px;
+    margin:70px auto;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ---------- Headings ---------- */
+h1{
+    text-align:center;
+    color:#0f172a;
+}
+h2{
+    color:#1e3a8a;
+    margin-top:30px;
+}
+
+/* ---------- Dataset Info Box ---------- */
+.info-box{
+    background:#f1f5f9;
+    padding:20px;
+    border-left:6px solid #2563eb;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+/* ---------- List ---------- */
+ul{
+    margin-left:20px;
+}
+ul li{
+    margin:10px 0;
+    font-size:15px;
+    color:#334155;
+}
+
+/* ---------- Table ---------- */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+table th, table td{
+    border:1px solid #cbd5f5;
+    padding:12px;
+    text-align:center;
+}
+table th{
+    background:#1e3a8a;
+    color:white;
+}
+table tr:nth-child(even){
+    background:#f1f5f9;
+}
+
+/* ---------- Footer Note ---------- */
+.note{
+    margin-top:30px;
+    padding:15px;
+    background:#e0f2fe;
+    border-radius:6px;
+    font-size:15px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- ---------- NAVBAR ---------- -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/predict-page">Prediction</a>
+    <a href="/about">About</a>
+    <a href="/work">How It Works</a>
+    <a href="/dataset">Dataset</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+</div>
+
+<!-- ---------- DATASET CONTENT ---------- -->
+<div class="container">
+
+    <h1>Dataset Used in the Project</h1>
+
+    <p>
+        The AI-Powered Stock Market Predictor uses historical stock market data
+        to train the machine learning model and generate predictions.
+    </p>
+
+    <h2>Dataset Source</h2>
+    <div class="info-box">
+        The dataset is collected from publicly available stock market sources
+        such as Yahoo Finance and stored in CSV format.
+    </div>
+
+    <h2>Dataset Attributes</h2>
+    <ul>
+        <li><b>Date</b> – Trading date</li>
+        <li><b>Open</b> – Opening price of the stock</li>
+        <li><b>High</b> – Highest price of the day</li>
+        <li><b>Low</b> – Lowest price of the day</li>
+        <li><b>Close</b> – Closing price of the stock</li>
+        <li><b>Volume</b> – Number of shares traded</li>
+    </ul>
+
+    <h2>Sample Dataset</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Volume</th>
+        </tr>
+        <tr>
+            <td>2023-01-01</td>
+            <td>150</td>
+            <td>155</td>
+            <td>148</td>
+            <td>152</td>
+            <td>1200000</td>
+        </tr>
+        <tr>
+            <td>2023-01-02</td>
+            <td>152</td>
+            <td>158</td>
+            <td>151</td>
+            <td>156</td>
+            <td>1350000</td>
+        </tr>
+        <tr>
+            <td>2023-01-03</td>
+            <td>156</td>
+            <td>160</td>
+            <td>154</td>
+            <td>158</td>
+            <td>1420000</td>
+        </tr>
+    </table>
+
+    <div class="note">
+        <b>Note:</b> The dataset is preprocessed before training the AI model
+        to remove missing values and normalize data for better prediction accuracy.
+    </div>
+
+</div>
+
+</body>
+</html>

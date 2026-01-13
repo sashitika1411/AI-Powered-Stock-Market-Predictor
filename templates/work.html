@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How It Works</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#e0f2fe,#f8fafc);
+}
+
+/* ---------- Navbar ---------- */
+.navbar{
+    background:#0f172a;
+    padding:14px;
+    text-align:center;
+}
+.navbar a{
+    color:#e5e7eb;
+    margin:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.navbar a:hover{
+    color:#38bdf8;
+}
+
+/* ---------- Main Container ---------- */
+.container{
+    width:800px;
+    margin:70px auto;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ---------- Headings ---------- */
+h1{
+    text-align:center;
+    color:#0f172a;
+}
+h2{
+    color:#1e3a8a;
+    margin-top:30px;
+}
+
+/* ---------- Steps ---------- */
+.step{
+    background:#f1f5f9;
+    padding:20px;
+    margin:20px 0;
+    border-left:6px solid #2563eb;
+    border-radius:8px;
+    transition:0.3s;
+}
+.step:hover{
+    background:#e0f2fe;
+    transform:translateX(5px);
+}
+
+.step h3{
+    margin:0;
+    color:#0f172a;
+}
+.step p{
+    margin-top:8px;
+    color:#334155;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* ---------- Flow Box ---------- */
+.flow{
+    margin-top:40px;
+    padding:20px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    border-radius:8px;
+    font-size:16px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- ---------- NAVBAR ---------- -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/predict-page">Prediction</a>
+    <a href="/about">About</a>
+    <a href="/work">How It Works</a>
+    <a href="/dataset">Dataset</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+</div>
+
+<!-- ---------- CONTENT ---------- -->
+<div class="container">
+
+    <h1>How the System Works</h1>
+
+    <div class="step">
+        <h3>Step 1: Data Collection</h3>
+        <p>
+            Historical stock market data is collected from reliable sources.
+            This data includes prices such as open, high, low, and close values.
+        </p>
+    </div>
+
+    <div class="step">
+        <h3>Step 2: Data Preprocessing</h3>
+        <p>
+            The collected data is cleaned and processed to remove missing or
+            invalid values. Relevant features are selected for training the model.
+        </p>
+    </div>
+
+    <div class="step">
+        <h3>Step 3: Model Training</h3>
+        <p>
+            A Machine Learning model is trained using the processed historical data.
+            The model learns patterns and trends present in past stock prices.
+        </p>
+    </div>
+
+    <div class="step">
+        <h3>Step 4: User Input</h3>
+        <p>
+            The user enters the stock symbol and the number of days ahead
+            for which the prediction is required.
+        </p>
+    </div>
+
+    <div class="step">
+        <h3>Step 5: Prediction</h3>
+        <p>
+            The trained AI model processes the user input and predicts the
+            future stock price based on learned patterns.
+        </p>
+    </div>
+
+    <div class="step">
+        <h3>Step 6: Result Display</h3>
+        <p>
+            The predicted stock price is displayed to the user through a
+            simple and interactive web interface.
+        </p>
+    </div>
+
+    <div class="flow">
+        Data → Preprocessing → AI Model → Prediction → Result
+    </div>
+
+</div>
+
+</body>
+</html>
