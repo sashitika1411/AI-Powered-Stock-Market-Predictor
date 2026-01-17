@@ -22,3 +22,25 @@ An end-to-end AI-powered stock price prediction web application built using Pyth
 
 ☁️ Deployed Online
 
+🛠️ Tech Stack
+🔹 Frontend
+
+HTML5
+CSS3
+Jinja2 Templates
+🔹 Backend
+
+Python
+Flask
+
+🔹 Machine Learning
+
+scikit-learn
+NumPy
+Joblib
+🔹 Database
+
+SQLite
+users.db – user login data
+contact.db – contact messages
+predictions.db – prediction history
